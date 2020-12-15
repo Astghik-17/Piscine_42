@@ -1,8 +1,12 @@
 #include <unistd.h>
 
-void ft_print_alphabet(void){
-	char n = '0';
-	while (n <= '9'){
+void	ft_print_alphabet(void)
+{
+	char n;
+       
+	n = '0';
+	while (n <= '9')
+	{
 		write(1, &n, 1);
 		++n;
 	}
